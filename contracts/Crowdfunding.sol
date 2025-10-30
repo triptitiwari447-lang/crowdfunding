@@ -6,9 +6,9 @@ contract Crowdfund {
     uint256 public goal;
     uint256 public totalFunds;
 
-    mapping(address => uint256) public contributions;
+    mapping(address => uint) public contributions;
 
-    constructor(uint256 _goal) {
+    constructor(uint _goal) {
         owner = msg.sender;
         goal = _goal;
     }
